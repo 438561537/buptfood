@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/shaking/shaking",
+    "pages/index/index",
+    "pages/menu/menu",
+    "pages/catalog/catalog"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#4A6141",
+    "backgroundColor": "#4A6141"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#4A6141",
+    "color": "#333",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/shaking/shaking",
+        "text": "摇一摇",
+        "iconPath": "images/icon/wx_app_duang.png",
+        "selectedIconPath": "images/icon/wx_app_duang@HL.png"
+      },
+      {
+        "pagePath": "pages/menu/menu",
+        "text": "食堂",
+        "iconPath": "images/icon/wx_app_menu.png",
+        "selectedIconPath": "images/icon/wx_app_menu@HL.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  }
+}

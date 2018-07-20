@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="card_wrap">
+    <view  class="card_item card ">
+      <span class="change_icon">
+        <image  src="{{z}}"mode="aspectFit"></image>
+      </span>
+      <view class="card_info">
+        <blockquote class="card_info_mes_title">菜名：{{p}}</blockquote>
+        <span class="card_info_mes_item" >分数：{{q}}</span>
+        <span class="card_info_mes_item" >价格：{{m}}</span>
+        <span class="card_info_mes_item" >地点：{{n}}{{x}}</span>
+        <span class="card_info_mes_item" >食材：{{l}}</span>
+        <span class="card_info_mes_item" >评价：{{y}}</span>
+      </view> 
+      <image src="../../images/food/backphoto.jpg"></image>
+    </view>
+  </view>
+</view>
+

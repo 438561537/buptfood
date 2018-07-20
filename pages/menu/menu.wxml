@@ -1,0 +1,47 @@
+<view class="recipe_tabs">
+  <view class="recipe_tab {{currentTab==0 ? 'recipe_tab_active' : ''}}" data-current="0" bindtap="swipeContent">菜品总览</view>
+  <view class="recipe_tab {{currentTab==1 ? 'recipe_tab_active' : ''}}" data-current="1" bindtap="swipeContent">食堂上新</view>
+
+</view>
+
+<swiper current="{{currentTab}}" class="swiper_container" bindchange="swiperChange">
+<swiper-item>
+<scroll-view scroll-y style="height:100%">
+<view class="recipe_cell"  wx:for="{{res}}">
+<navigator url="../catalog/catalog?menu={{item.menu}}&point={{item.point}}&price={{item.price}}&location={{item.location}}&contains={{item.contains}}&summary={{item.summary}}&img={{item.img}}&floors={{item.floors}}">
+      <view class="list-img">
+        <image class="video-img" mode="scaleToFill" src="{{item.img}}"></image>
+      </view>
+      <view class="list-detail">
+        <view class="list-title"><text>菜名：{{item.menu}}</text></view>
+        <view class="list-tag"><text>价格:{{item.price}}</text></view>
+        <view class="list-info"><text>菜品评分：{{item.point}}</text></view>
+      </view> 
+        </navigator>
+ </view>        
+ </scroll-view>
+</swiper-item>
+
+<swiper-item>
+<scroll-view scroll-y style="height:100%">
+<view class="recipe_cell"  wx:for="{{New}}">
+<navigator url="../catalog/catalog?menu={{item.menu}}&point={{item.point}}&price={{item.price}}&location={{item.location}}&contains={{item.contains}}&summary={{item.summary}}&img={{item.img}}">
+      <view class="list-img">
+        <image class="video-img" mode="scaleToFill" src="{{item.img}}"></image>
+      </view>
+      <view class="list-detail">
+        <view class="list-title"><text>菜名：{{item.menu}}</text></view>
+        <view class="list-tag"><text class="list-num">价格:{{item.price}}</text></view>
+        <view class="list-info"><text>菜品评分：{{item.point}}</text></view>
+      </view> 
+      </navigator>
+ </view> 
+ </scroll-view>
+</swiper-item>
+
+
+<swiper-item>
+</swiper-item>
+</swiper>
+
+

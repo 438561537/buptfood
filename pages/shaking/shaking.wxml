@@ -1,0 +1,34 @@
+<!--pages/shaking/shaking.wxml-->
+
+<!-- 下拉菜单   -->
+  <view id="swiper-tab">
+    <view class="swiper-tab">
+      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="tabNav">{{first}}
+        <i></i>
+      </view>
+    </view>
+    <swiper current="{{currentTab}}" duration="1000" class="swiper-item" style='display:{{displays}}'>
+      <swiper-item class="shaixuankuang">
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">食堂</span>
+          <block wx:for="{{array}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="choseTxtColor" style="{{index == one?' border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+        <view class="shaixuan">
+          <span class="shuaixuantiaojian">楼层</span>
+          <block wx:for="{{level}}" wx:key="key">
+            <view class="chose-txt" data-id="{{index}}" bindtap="level" style="{{index == two?'border:1rpx solid #e8580c; color: #e8580c':'border:1rpx solid gainsboro;color:gray'}}">
+              <text class="chose-p">{{item.name}}</text>
+            </view>
+          </block>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="swiper-beijing" bindtap="hideNav" style='display:{{displays}}'></view>
+<view class="container">
+  <image class="food" src="/images/background/shaking_food.png"></image>
+</view>
