@@ -1,27 +1,11 @@
 # buptfood
-用户分析
-1) 许多大学生对食堂饭菜存在选择困难问题，需要一款小程序帮助他们快速做出优良的选择。
-2) 初来乍到的新生及外校人员对食堂不是很了解，需要一款小程序向他们推荐食堂口碑菜肴及新品菜肴的。
-功能分析
-1）小程序需要快速高效地帮助用户进行菜肴匹配，解决用户选择困难问题。
-2）小程序可以提供食堂口碑菜肴推荐，向用户推荐口碑菜、新品菜。
-3）用户可以随时对菜肴进行评分，评分将会反馈到菜肴评分榜上，同时也方便我们向用户优先推荐受欢迎的菜肴。
-性能分析
-上述功能的实现并不需要一个很大的APP去完成，通过一个便捷的微信小程序就可以完成上述功能。
+====
+# Wechatapp
+This repository is a project of a course in my school.
+This application can help users solve the problem of choice difficulty and recommend dishes for BUPT canteens.
 
+## The application includes
+- Recommend good reputation dishes
+- Random recommendation by shaking your mobile phone.
 
-
-目标
-1） 通过摇一摇的方式向用户提供优良的选择，快速解决选择困难的问题。
-2）实现一个用户评分反馈机制，用户对菜肴评分，后台人员定期更新评分榜，优化摇一摇推荐方式。
-
-
-应用目标：计划的应用效果
-能够帮助学生或学校外来人群快速选择食堂菜肴，帮助用户解决选择困难问题，解决用户“选择吃什么？”、“什么菜好吃？”、“该去哪里吃？”等问题。
-
-
-功能实现
-具体文件结构
-如图所示，image为我们小程序后台菜品图片，images为我们项目的小程序界面用图 。pages文件中welcome、shaking、menu、index、catalog分别为我们项目的欢迎界面文件，摇一摇界面文件，列表界面文件，及两种菜品详情界面文件。
-联系方式：
-邮箱:  438561537@qq.com    maqi@bupt.edu.cn、
+## Contract us:  guxiaoyang@bupt.edu.cn
